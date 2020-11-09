@@ -26,7 +26,7 @@ Resulting in the following **business performance:**
 * This means the fraud company's relative profit for each \\$100 of transaction from client is \\$0.24
 
 ## Some mistakes and future improvements:
-* I mistakengly mixed portuguese and english in this project. At this point the project is too long and I and too busy to change this, I hope the reader doesnt mind.
+* I mistakenly mixed portuguese and english in this project. At this point the project is too long and I and too busy to change this. This is a bad habit that compromizes organization and storytelling and I learned the lesson in this project. I hope the reader doesn't mind.
 * Although I was very careful to not make data likage mistakes, a more correct form of conducting this project would be to isolate a test dataset from the very start.
 
 # The Business Challenge
