@@ -1,6 +1,7 @@
-# pa002_blocker_fraud_company
+# Blocker Fraud Company project
 
 This project contains the solution for this business case: https://bit.ly/34V6Wpw
+
 The business case uses dataset from this kaggle webpage: https://www.kaggle.com/ntnu-testimon/paysim1
 
 To not clog the notebook, it has the been divided in 4 parts:
@@ -14,12 +15,12 @@ This part is focused on selecting the best Machine Learning model. I tried sever
 ## Part4:
 Finally with the final model chosen and tuned, I used it on the full dataset. The model had the following performance:
 
-## Final result
+**Final result:**
 * Balanced Accuracy: 0.998765
 * F1Score: 0.998764
 * KappaScore: 0.998762
 
-Resulting in the following business performance:
+Resulting in the following **business performance:**
 
 * With client's total amount of transactions of \\$229,409,295,522.24, the company's total profit is $555,956,368.86.
 * This means the fraud company's relative profit for each \\$100 of transaction from client is \\$0.24
