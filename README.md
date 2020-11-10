@@ -4,16 +4,16 @@ This project contains the solution for this business case: https://bit.ly/34V6Wp
 
 The business case uses dataset from this kaggle webpage: https://www.kaggle.com/ntnu-testimon/paysim1
 
-To not clog the notebook, it has the been divided in 4 parts:
+To not clog the notebook, I divided the analysis in 4 parts:
 
 ## Part1:
-in this part I sampled the data to reduce computational cost and completed the analysis until Exploratory Data Analysis (EDA) and feature engineering. Note the interest choice to cap the outliers and use logarithmic transformation on the continuous data.
+in this part I sampled the data to reduce computational cost and completed the analysis until Exploratory Data Analysis (EDA) and feature engineering. 
 ## Part2:
-Realizing that fraud only happens with transfer types Transfer and Cash_out, I eliminated every sample containing other types of transfer and repeated the steps of part 1 to see what changes with data sampled this way. 
+Realizing that fraud only happens with transfer types Transfer and Cash_out, I eliminated every sample containing other types of transfer and repeated the steps of part 1 to see what changes with data sampled this way. Furthermore I tested various balancing algortihms and continuous data variable transformations to see whats is more adequate to this dataset. 
 ## Part3:
-This part is focused on selecting the best Machine Learning model. I tried several models and undersampling techniques. Surprisingly undersample didnt show a significant increase in accuracy. The best model was random forest with data unbalanced. After selecting the best model I tuned it with random search techniques. Note that I don't have computational resource to conduct this part without sampling this dataset.
+In this part I applied a feature selector algorithm to select the best features (boruta). Next I focused on selecting the best Machine Learning model. I tried several models combining with various undersampling techniques. Surprisingly undersampling didnt show a significant increase in accuracy. The final choice was random forest with data unbalanced. After selecting the best model I tuned it with random search techniques. Note that I don't have computational resource to conduct this part without sampling this dataset.
 ## Part4:
-Finally with the final model chosen and tuned, I used it on the full dataset. The model had the following performance:
+Finally with the final model chosen and tuned I used it on the full dataset. The model had the following performance:
 
 **Final result:**
 * Balanced Accuracy: 0.998765
